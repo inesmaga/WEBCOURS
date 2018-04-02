@@ -1,0 +1,54 @@
+body, html {
+  text-align: center;
+  font-family: 'Raleway';
+  background: pink;
+}
+
+.tab input.tabs {
+  position: absolute;
+  left: -9999px;
+  top: -99999px;
+}
+
+#tab1 {
+  position: absolute;
+  left: -9999px;
+  top: -99999px;
+}
+
+.tab {
+  width: 650px;
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 75px auto;
+}
+
+.tab li {
+  float: left;
+  width: auto;
+}
+
+.tab label {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 2px 2px 0 0;
+  color: #08c;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab label:hover {
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+}
+
+.tabs:checked + label {
+  background: #08c;
+  color: #fff;
+  top: 0;
+}
